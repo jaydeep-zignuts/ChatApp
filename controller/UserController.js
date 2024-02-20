@@ -78,7 +78,7 @@ const Ind = async (req, res) => {
   console.log("first");
   console.log(__dirname);
   return res.sendFile(
-    "/Users/ztlab97/Prelearning_path/ExpressChat/public/chat.html"
+    "/Users/ztlab97/Prelearning_path/ExpressChat/public/index.html"
   );
 };
 
