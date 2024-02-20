@@ -58,7 +58,7 @@ io.on("connection", (socket) => {
     }
   });
 });
-//app.use(cors);
+app.use(cors);
 server.listen(PORT || 3000, () => {
   console.log(`server is running on port ${PORT}`);
 });
