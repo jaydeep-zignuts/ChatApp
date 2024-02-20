@@ -81,7 +81,6 @@ const Ind = async (req, res) => {
     "/Users/ztlab97/Prelearning_path/ExpressChat/public/index.html"
   );
 };
-
 module.exports = {
   Register,
   Login,
