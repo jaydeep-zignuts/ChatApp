@@ -10,15 +10,15 @@ const {
   userLeave,
   getRoomUsers,
 } = require("./utils/users");
-// const dotenv = require("dotenv").config();
+const dotenv = require("dotenv").config();
 const PORT = 3000;
 const path = require("path");
 const socketio = require("socket.io");
 const io = socketio(server);
-// const userRoute = require("./routes/UserRoutes");
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(userRoute);
+const userRoute = require("./routes/UserRoutes");
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(userRoute);
 
 app.use(express.static(path.join(__dirname, "public")));
 

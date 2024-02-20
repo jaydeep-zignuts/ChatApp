@@ -1,7 +1,8 @@
 const User = require("../models/User.js");
 const bcrypt = require("bcrypt");
 const jsonWebToken = require("jsonwebtoken");
-
+const path = require("path");
+// const file=require("../public/chat.html")
 const Register = async (req, res) => {
   try {
     const { name, username, email, password } = req.body;
@@ -74,7 +75,11 @@ const Login = async (req, res) => {
   }
 };
 const Ind = async (req, res) => {
-  return res.sendFile(path.join(__dirname + "/public/chat.html"));
+  console.log("first");
+  console.log(__dirname);
+  return res.sendFile(
+    "/Users/ztlab97/Prelearning_path/ExpressChat/public/chat.html"
+  );
 };
 
 module.exports = {
